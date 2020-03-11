@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <Authors>Hadi Ahmadi</Authors>
+    <Company>Pap Group</Company>
+    <Description>a library for bridging between NSubstitute and NFluent</Description>
+    <Copyright>Copyright Pap Group Co 2020</Copyright>
+    <RepositoryUrl>https://github.com/PapGroup/NSubstitute.NFluentBridge</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
