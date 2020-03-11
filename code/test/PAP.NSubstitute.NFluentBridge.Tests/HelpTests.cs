@@ -1,4 +1,5 @@
 using System;
+using System.Data.SqlTypes;
 using NFluent;
 using NSubstitute;
 using PAP.NSubstitute.NFluentBridge.Tests.TestUtils;
@@ -6,7 +7,7 @@ using Xunit;
 
 namespace PAP.NSubstitute.NFluentBridge.Tests
 {
-    public class UnitTest1
+    public class HelpTests
     {
         [Fact]
         public void should_check_method_arguments_using_nfluent()
