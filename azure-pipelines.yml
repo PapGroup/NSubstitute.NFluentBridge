@@ -1,0 +1,22 @@
+trigger:
+- master
+- develop
+
+pool:
+  vmImage: 'ubuntu-16.04'
+
+container: mcr.microsoft.com/dotnet/core/sdk:3.1-bionic
+
+steps:
+- script: |
+    chmod +x ./build.sh
+    ./build.sh
+  displayName: 'Run Build Script'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: artifacts
+    artifactName: artifacts
+    parallel: true
+    parallelCount: 8
+  displayName: 'Publish artifacts'
